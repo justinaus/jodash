@@ -1,5 +1,9 @@
-console.log('hello world!!!!');
+import { add1000Comma } from './src/string'
+import { getCanConvertNumber, changeTo1000comma } from './src/number'
 
-var a = 3;
+export {
+  add1000Comma,
+  getCanConvertNumber,
+  changeTo1000comma,
+}
 
-console.log( a );

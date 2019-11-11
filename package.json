@@ -1,6 +1,7 @@
 {
   "name": "jodash",
-  "version": "1.0.0",
+  "version": "1.0.2",
+  "private": false,
   "main": "index.js",
   "repository": "https://github.com/justinaus/jodash.git",
   "author": "justin.koo <justin.koo@kakaocorp.com>",
@@ -8,5 +9,8 @@
   "scripts": {
     "serve": "parcel index.html",
     "build": "parcel build index.js"
+  },
+  "dependencies": {
+    "src": "^1.1.2"
   }
 }
