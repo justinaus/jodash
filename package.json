@@ -1,0 +1,12 @@
+{
+  "name": "jodash",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/justinaus/jodash.git",
+  "author": "justin.koo <justin.koo@kakaocorp.com>",
+  "license": "MIT",
+  "scripts": {
+    "serve": "parcel index.html",
+    "build": "parcel build index.js"
+  }
+}
