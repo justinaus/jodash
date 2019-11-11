@@ -1,6 +1,6 @@
 {
   "name": "jodash",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "main": "index.js",
   "repository": "https://github.com/justinaus/jodash.git",
@@ -11,7 +11,9 @@
     "build": "parcel build index.js"
   },
   "dependencies": {
-    "parcel-bundler": "^1.12.4",
     "src": "^1.1.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
