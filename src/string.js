@@ -1,3 +1,5 @@
+import { getCanConvertNumber } from './number'
+
 export function add1000Comma( value ) {
   if( !value )  return value;
 
@@ -35,14 +37,14 @@ export function getNumberAfterRemoveComma( value ) {
   return ret;
 }
 
-export function ellipsis ( data, cutoff, strAdd ) {
-  var str = data.toString(); // cast numbers
+export function ellipsis ( strFull, cutoffLength, strAdd ) {
+  var str = strFull.toString(); // cast numbers
 
   if( !strAdd ) {
     strAdd = '&#8230;'
   }
 
-  str = str.length <= cutoff ? str : str.substr(0, cutoff) + strAdd;
+  str = str.length <= cutoffLength ? str : str.substr(0, cutoffLength) + strAdd;
   
   return str;
 };
@@ -55,7 +57,11 @@ export function decodeHTMLEntities( docu, text) {
   return value;
 }
 
-export function make00( nCount ) {
+export function make00( value ) {
+  if( !getCanConvertNumber( value ) ) return value;
+
+  var nCount = Number.parseInt( value, 10 );
+
   var ret;
 
   if( nCount < 10 ) {
