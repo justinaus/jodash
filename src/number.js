@@ -8,6 +8,7 @@ export function getCanConvertNumber( value ) {
   return !isNaN( value );
 }
 
+// ignore not number.
 export function changeTo1000comma( strOrg ) {
   if( !strOrg ) return '';
 
@@ -35,5 +36,5 @@ export function changeTo1000comma( strOrg ) {
 
     const nRet = Number.parseInt( ret, 10 );
 
-    return addCommaForMoney( nRet );
+    return add1000Comma( nRet );
 }
