@@ -1,19 +1,24 @@
 {
   "name": "jodash",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "private": false,
   "main": "index.ts",
   "repository": "https://github.com/justinaus/jodash.git",
   "author": "justin.koo <justin.koo@kakaocorp.com>",
   "license": "MIT",
   "scripts": {
-    "serve": "parcel index.html",
-    "build": "parcel build index.ts"
+    "start": "parcel index.html",
+    "build": "concurrently \"npm:prebuild\" \"parcel build index.ts\"",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "tsc --noEmit --watch",
+    "develop": "concurrently -r \"npm:type-check:watch\" \"npm:start\"",
+    "prebuild": "rm -rf dist"
   },
   "dependencies": {
     "src": "^1.1.2"
   },
   "devDependencies": {
+    "concurrently": "^5.0.1",
     "parcel-bundler": "^1.12.4",
     "typescript": "^3.7.3"
   }
