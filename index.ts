@@ -17,10 +17,14 @@ export {
   makeQueryStringByObject
 }
 
-console.log( getCanConvertNumber( '123123' ) );
+// console.log( getCanConvertNumber( '123123' ) );
 
-console.log( getNumberAfterRemoveComma( '123,123' ) );
+// console.log( getNumberAfterRemoveComma( '123,123' ) );
 
-console.log( ellipsis( 'afdasdfadsfads', 4 ) );
+// console.log( ellipsis( 'afdasdfadsfads', 4 ) );
 
-console.log( make00( 7 ) );
+// console.log( make00( 7 ) );
+
+// console.log( ellipsis( 123, 4 ) );
+
+// console.log( make00( null ) );

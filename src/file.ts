@@ -1,4 +1,4 @@
-export function downloadFile( blob, flieName ) {
+export function downloadFile( blob: BlobPart, flieName: string = 'download' ) {
   // var newBlob = new Blob([blob], {type: "application/pdf"}
   var newBlob = new Blob([blob]);
 
@@ -12,6 +12,6 @@ export function downloadFile( blob, flieName ) {
   const data = window.URL.createObjectURL(newBlob);
   var link = document.createElement('a');
   link.href = data;
-  link.download= flieName || 'download';
+  link.download= flieName;
   link.click();
 }
