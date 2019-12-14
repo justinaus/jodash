@@ -1,7 +1,14 @@
-import { getCanConvertNumber } from './src/number'
-import { changeTo1000comma, getNumberAfterRemoveComma, decodeHTMLEntities, ellipsis, make00 } from './src/string'
-import { downloadFile } from './src/file'
-import { makeQueryStringByObject } from './src/url'
+// const add = (a: number, b: number) => a + b;
+
+// export {
+//   add
+// }
+
+
+import { getCanConvertNumber } from './number'
+import { changeTo1000comma, getNumberAfterRemoveComma, decodeHTMLEntities, ellipsis, make00 } from './string'
+import { downloadFile } from './file'
+import { makeQueryStringByObject } from './url'
 
 export {
   getCanConvertNumber,
