@@ -1,8 +1,8 @@
 {
   "name": "jodash",
-  "version": "1.1.0",
+  "version": "1.1.8",
   "private": false,
-  "main": "index.ts",
+  "main": "dist/index.js",
   "repository": "https://github.com/justinaus/jodash.git",
   "author": "justin.koo <justin.koo@kakaocorp.com>",
   "license": "MIT",
@@ -14,10 +14,8 @@
     "develop": "concurrently -r \"npm:type-check:watch\" \"npm:start\"",
     "prebuild": "rm -rf dist"
   },
-  "dependencies": {
-    "src": "^1.1.2"
-  },
   "devDependencies": {
+    "src": "^1.1.2",
     "concurrently": "^5.0.1",
     "parcel-bundler": "^1.12.4",
     "typescript": "^3.7.3"
