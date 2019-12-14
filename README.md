@@ -1,14 +1,15 @@
 # jodash
 
-- add1000Comma(string | number):string
-- getNumberAfterRemoveComma(string):string
-- decodeHTMLEntities(document, text: string):string
-- ellipsis(strFull: string, cutoffLength: number, strAdd: string):string
-- make00(string | number):string
+~~~js
+export declare function downloadFile(blob: BlobPart, flieName?: string): void;
 
-- getCanConvertNumber(any):boolean
-- changeTo1000comma(string):string
+export declare function getCanConvertNumber(value: any): boolean;
 
-- downloadFile(blob, flieName:string)
+export declare function changeTo1000comma(value: string | number): string;
+export declare function getNumberAfterRemoveComma(value: string | number): number;
+export declare function ellipsis(strFull: string, cutoffLength: number, strAdd?: string): string;
+export declare function decodeHTMLEntities(docu: Document, text: string): string;
+export declare function make00(value: string | number): string;
 
-- makeQueryStringByObject(object):string
+export declare function makeQueryStringByObject(obj: any): string;
+~~~
