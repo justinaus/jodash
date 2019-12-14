@@ -1,6 +1,6 @@
 # jodash
 
-~~~js
+~~~ts
 export declare function downloadFile(blob: BlobPart, flieName?: string): void;
 
 export declare function getCanConvertNumber(value: any): boolean;
