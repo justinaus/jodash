@@ -55,7 +55,7 @@ export function getNumberAfterRemoveComma( value: string | number ): number {
 
   if( !strValueWithoutComma || !getCanConvertNumber( strValueWithoutComma ) ) return 0;
 
-  return Number.parseInt( strValueWithoutComma, 10 );
+  return Math.floor( Number( strValueWithoutComma ) );
 }
 
 export function ellipsis ( strFull: string, cutoffLength: number, strAdd: string = '&#8230;' ): string {
@@ -79,7 +79,7 @@ export function make00( value: string | number ): string {
 
   if( !getCanConvertNumber( value ) ) return strValue;
 
-  var nCount = Number.parseInt( strValue, 10 );
+  const nCount = Math.floor( Number( strValue ) );
 
   return nCount < 10 ? '0' + nCount : nCount.toString();
 }
