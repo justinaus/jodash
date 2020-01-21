@@ -2,14 +2,16 @@ import { getCanConvertNumber } from './number'
 
 function justAdd1000Comma( strValue: string ): string {
   let ret = '';
-
   let nFromEnd: number;
+  let char: string;
 
   for(var i=0; i<strValue.length; ++i) {
+    char = strValue[ i ];
+
     nFromEnd = strValue.length - 1 - i;
 
-    ret += strValue[ i ];
-    if( nFromEnd !== 0 && nFromEnd % 3 === 0 ) {
+    ret += char;
+    if( nFromEnd !== 0 && nFromEnd % 3 === 0 && char !== '-' ) {
       ret += ','
     }
   }
