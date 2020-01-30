@@ -9,6 +9,7 @@ import { getCanConvertNumber } from './number'
 import { changeTo1000comma, getNumberAfterRemoveComma, decodeHTMLEntities, ellipsis, make00 } from './string'
 import { downloadFile } from './file'
 import { makeQueryStringByObject } from './url'
+import { getLastDateOfMonth } from './date'
 
 export {
   getCanConvertNumber,
@@ -21,7 +22,9 @@ export {
 
   downloadFile,
 
-  makeQueryStringByObject
+  makeQueryStringByObject,
+
+  getLastDateOfMonth
 }
 
 // console.log( getCanConvertNumber( '123123' ) );
@@ -35,3 +38,5 @@ export {
 // console.log( ellipsis( 123, 4 ) );
 
 // console.log( make00( null ) );
+
+// console.log( getLastDateOfMonth( 2020, 2 ) );
