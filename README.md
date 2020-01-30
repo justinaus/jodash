@@ -12,4 +12,18 @@ export declare function decodeHTMLEntities(docu: Document, text: string): string
 export declare function make00(value: string | number): string;
 
 export declare function makeQueryStringByObject(obj: any): string;
+
+export declare function getLastDateOfMonth( year: number, month: number ): number {
 ~~~
+
+```
+yarn install
+```
+
+```
+yarn build
+```
+
+```
+npm publish
+```
