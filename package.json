@@ -6,7 +6,7 @@
   "module": "build/index.es.js",
   "jsnext:main": "build/index.es.js",
   "repository": "https://github.com/justinaus/jodash.git",
-  "author": "justin.koo <justin.koo@kakaocorp.com>",
+  "author": "justinaus <justinaus2k@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c"
